@@ -23,7 +23,7 @@ class Career(models.Model):
         choices = LEVELS    
     )
     
-    def _str_(self):
+    def __str__(self):
         return f"{ self.level } - { self.short_name }"
     
     
